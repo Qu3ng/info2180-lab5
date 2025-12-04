@@ -1,1 +1,39 @@
-/* Add your own styles */
+#controls {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+#country {
+    padding: 8px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#result ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#result li {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+#result li:nth-child(even) {
+    background: #f9f9f9;
+}
