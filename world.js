@@ -1,5 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('lookup').addEventListener('click', function() {
+        performLookup();
+    });
+    
+    document.getElementById('country').addEventListener('keypress', function(event) {
+        if (event.key === 'Enter') {
+            performLookup();
+        }
+    });
+    
+    function performLookup() {
         let country = document.getElementById('country').value;
         let url = 'world.php?country=' + encodeURIComponent(country);
         
@@ -11,5 +21,5 @@ document.addEventListener('DOMContentLoaded', function() {
             .catch(error => {
                 console.error('Error:', error);
             });
-    });
+    }
 });
