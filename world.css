@@ -55,3 +55,12 @@ th {
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
+#lookupCities {
+    margin-left: 10px;
+    background-color: #28a745;
+}
+
+#lookupCities:hover {
+    background-color: #218838;
+}
